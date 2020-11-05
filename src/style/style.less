@@ -160,12 +160,6 @@
             line-height: 14px;
         }
     }
-    
-
-    
-    
-
-
 }
 
 .main {
@@ -191,6 +185,13 @@
         background-color: @yellow;   
         display: flex;
         align-items: center;
+    }
+
+    &__title > h1 {
+        font-family: "Alata";
+        font-size: 90px;
+        font-weight: 400;
+        padding: 0;
     }
 
     &__title {
@@ -298,3 +299,95 @@
     }
 }
 
+.footer {
+    height: 782px;
+    background-color: @black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    &__title > h1 {
+        font-family: "  Alata";
+        font-size: 90px;
+        line-height: 100px;
+        font-weight: 400;
+        padding: 0;
+        padding: 100px 0 50px 0;
+        color: @white;
+    }
+
+    &__span {
+        height: 6px;
+        width: 100px;
+        background-color: @orange;
+    }
+
+    &__email {
+        margin-top: 40px;
+        
+        .h2 {
+            font-family: "Sofia Pro";
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 42px;
+            margin-bottom: 0;
+        }
+
+        .email__title {
+            color: @white;
+        }
+
+        .email__text {
+            color: @orange;
+            text-decoration: underline;
+        }
+
+    }
+
+    &__form {
+        display: flex;
+        margin-top: 150px;
+        justify-content: flex-end;
+
+        .form__title {
+            font-family: "Sofia Pro";
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 42px;
+            color: @white;
+            margin-bottom: 40px;
+            width: 300px;
+        }
+
+        .form__input {
+            font-family: "Sofia Pro";
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 14px;
+            width: 445px;
+            height: 48px;
+            color: @black;
+            letter-spacing: 0.6px;
+            margin-top: 5px;
+        }
+
+        .form__button > button {
+            margin-top: 5px;
+            width: 196px;
+            height: 48px;
+            background-color: @orange;
+            font-family: "Sofia Pro";
+            font-weight: 600;
+            font-size: 14px;    
+            border: 0;
+    
+            img {
+                margin-left: 5px;
+            }
+        }
+    
+        .form__button > button:active {
+            border: 5px solid @yellow;
+        }
+    }
+}   
