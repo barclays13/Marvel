@@ -9,37 +9,71 @@
 <body>
     <section class="header">
         <div class="container">
-            <div class="header__navbar">
-                <div class="header__nav row justify-content-between">
-                    <div class="header__logo">
-                        <img  src="./src/assets/images/logo.png">
+            <div class="row">
+                <div class="header__navbar col-12">
+                    <div class="header__nav d-flex justify-content-between ">
+                        <div class="header__logo">
+                            <img  src="./src/assets/images/logo.png">
+                        </div>
+                        <div class="header__links d-none d-md-block">
+                            <a class="header__about header__link" href="#">About</a>
+                            <a class="header__services header__link header__link_active" href="#">Services</a>
+                            <a class="header__contact header__link" href="#">Contact</a>
+                        </div>
                     </div>
-                    <div class="header__links align-baseline">
-                        <a class="header__about header__link" href="#">About</a>
-                        <a class="header__services header__link header__link_active" href="#">Services</a>
-                        <a class="header__contact header__link" href="#">Contact</a>
+                    <!-- <div class="header__nav">
+                        <div class="header__nav_mobile-rolled justify-content-between " >
+                            <div class="header__logo">
+                                <img  src="./src/assets/images/logo.png">
+                            </div>
+                            <div class="navbar-toggler">
+                                <div class="navbar-toggler__line"></div>
+                                <div class="navbar-toggler__line"></div>
+                            </div>
+                        </div>
+                        <div class="header__nav_mobile-rolled d-block">                        
+                            <div class="header__nav d-flex justify-content-between " >
+                                <div class="header__logo-inv">
+                                    <img  src="./src/assets/images/logo.png">
+                                </div>
+
+                            </div>
+                            <ul class="nav nav-items flex-column">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">About</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Link</a>
+                                </li>
+                            </ul>
+                        </div> -->
                     </div>
                 </div>
+
+                <div class="header__title col-12">
+                    <h1>Marvel Power Group</h1>
+                </div>
+                <div class="header__discription col-12">
+                    <h2>
+                        Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors
+                    </h2>
+                </div>
+                <div class="header__button text-center col-12">
+                    <button type="button">
+                        CONTACT US
+                        <img src="./src/assets/images/header-button.png" alt="electrical plug">
+                    </button>
+                </div>
+                <div class="header__scroll d-none d-md-block">
+                    <a href="#">Scroll for more</a>
+                </div>     
             </div>
-            <div class="header__title">
-                <h1>Marvel Power Group</h1>
-            </div>
-            <div class="header__discription">
-                <h2>
-                    Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors
-                </h2>
-            </div>
-            <div class="header__button text-center">
-                <button type="button">
-                    CONTACT US
-                    <img src="./src/assets/images/header-button.png" alt="electrical plug">
-                </button>
-            </div>
-            <div class="header__scroll">
-                <a href="#">Scroll for more</a>
-            </div>
+
         </div>
-        <div class="lines header__lines">
+        <div class="lines header__lines d-none d-lg-block">
             <div class="line active ">
                 <p class="line__number">01</p>
                 <p class="line__name">Home</p>
@@ -62,21 +96,23 @@
     <section class="main">
         <div class="main__about-as">
             <div class="container">
-                <div class="main__title main__title_about-as">
-                    <h1>About Us</h1>
-                </div>
-                <div class="main__span  main__span_about-as"></div>
-                <div class="about-as__content">
-                    <img class="about-as__image" src="./src/assets/images/about_us_content.png" alt="city">
-                    <div class="about-as__description">
-                        <P>Our dynamic, solutions-oriented team brings decades 
-                            of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. </P>
-                        <P>We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. </P>
-                        <P>  We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.</P>
+                <div class="row">
+                    <div class="main__title main__title_about-as section__title col-12">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="main__span main__span_about-as"></div>
+                    <div class="about-as__content row">
+                        <img class="about-as__image col-lg-6 col-12" src="./src/assets/images/about_us_content.png" alt="city">
+                        <div class="about-as__description col-lg-6 col-12">
+                            <P>Our dynamic, solutions-oriented team brings decades 
+                                of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. </P>
+                            <P>We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. </P>
+                            <P>  We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.</P>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="lines">
+            <div class="lines d-none d-lg-block">
                 <div class="line">
                     <p class="line__number">01</p>
                     <div class="line__original"></div>
@@ -98,71 +134,80 @@
         </div>
         <div class="main__services">
             <div class="container">
-                <div class="main__title main__title_services">
-                    <h1>Services</h1>
-                </div>
-                <div class="main__span main__span_service"></div>
-                <div class="services__content row">
-                    <div class="services__descriprion col-9">
-                        <p>
-                            Our clients are at the forefront of energy transition and innovation. 
-                            Their task is complex: balance reliability and cost effectiveness with new 
-                            customer demands, investment decisions, decarbonization goals and an evolving menu 
-                            of new technologies. We understand the task and bring deep expertise to addressing these challenges.
-                        </p>
-                    
+                <div class="row">
+                    <div class="main__title main__title_services section__title col-12">
+                        <h1>Services</h1>
                     </div>
-                    <div class="services__items row">
-                        <div class="services__item col-4">
-                            <div class="item__title">
-                                <p>Enterprise</p>
-                                <p>Strategy</p> 
-                            </div>
-                            <ul class="services__list">
-                                <li>Procurement and investment diligence</li>
-                                <li>Customer engagement and retention</li>
-                                <li>Renewable, DER, and EV program structuring</li>
-                                <li>Reliability planning and reporting</li>
-                            </ul>
-                            <img class="item__arrow" src="./src/assets/images/arrow.png" alt="arrow">
+                    <div class="main__span main__span_services"></div>
+                    <div class="services__content row">
+                        <div class="services__descriprion col-9">
+                            <p>
+                                Our clients are at the forefront of energy transition and innovation. 
+                                Their task is complex: balance reliability and cost effectiveness with new 
+                                customer demands, investment decisions, decarbonization goals and an evolving menu 
+                                of new technologies. We understand the task and bring deep expertise to addressing these challenges.
+                            </p>
+                        
                         </div>
-                        <div class="services__item col-4">
-                            <div class="item__title">
-                                <p>Wholesale</p>
-                                <p>Power</p> 
-                            </div>
-                            <ul class="services__list">
-                                <li>Commodity advisory and RFPs </li>
-                                <li>Energy, capacity, REC, RIN, and LCFS placement </li>
-                                <li>Enterprise PPA structuring </li>
-                                <li>Contract extensions and re-packaging</li>
-                            </ul>
-                            <img class="item__arrow" src="./src/assets/images/arrow.png" alt="arrow">
+                        <div class="services__items row">
+                                <div class="services__item col-lg-4 col-12">
+                                    <div class="container">
+                                        <div class="item__title">
+                                            <p>Enterprise</p>
+                                            <p>Strategy</p> 
+                                        </div>
+                                        <ul class="services__list">
+                                            <li>Procurement and investment diligence</li>
+                                            <li>Customer engagement and retention</li>
+                                            <li>Renewable, DER, and EV program structuring</li>
+                                            <li>Reliability planning and reporting</li>
+                                        </ul>
+                                        <img class="item__arrow" src="./src/assets/images/arrow.png" alt="arrow">
+                                    </div>
+
+                                </div>
+                                <div class="services__item col-lg-4 col-12">
+                                    <div class="container">
+                                        <div class="item__title">
+                                            <p>Wholesale</p>
+                                            <p>Power</p> 
+                                        </div>
+                                        <ul class="services__list">
+                                            <li>Commodity advisory and RFPs </li>
+                                            <li>Energy, capacity, REC, RIN, and LCFS placement </li>
+                                            <li>Enterprise PPA structuring </li>
+                                            <li>Contract extensions and re-packaging</li>
+                                        </ul>
+                                        <img class="item__arrow" src="./src/assets/images/arrow.png" alt="arrow">
+                                    </div>
+                                </div>
+                                <div class="services__item col-lg-4 col-12">
+                                    <div class="container">
+                                        <div class="item__title">
+                                            <p>Market</p>
+                                            <p>Development</p>  
+                                        </div>
+                                        <ul class="services__list">
+                                            <li>New venture setup</li>
+                                            <li>Demand planning and acquisition </li>
+                                            <li>Project development and regulatory support</li>
+                                            <li>Partnership structuring</li>
+                                        </ul>
+                                        <img class="item__arrow" src="./src/assets/images/arrow.png" alt="arrow">
+                                    </div>
+                                </div>
                         </div>
-                        <div class="services__item col-4">
-                            <div class="item__title">
-                                <p>Market</p>
-                                <p>Development</p>  
-                            </div>
-                            <ul class="services__list">
-                                <li>New venture setup</li>
-                                <li>Demand planning and acquisition </li>
-                                <li>Project development and regulatory support</li>
-                                <li>Partnership structuring</li>
-                            </ul>
-                            <img class="item__arrow" src="./src/assets/images/arrow.png" alt="arrow">
+                        <div class="services__text col-9">
+                            <h2>
+                                Our clients are time constrained and under-resourced. 
+                                Agendas shift, budgets move and priorities change. 
+                                We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs. 
+                            </h2>
                         </div>
-                    </div>
-                    <div class="services__text col-9">
-                        <h2>
-                            Our clients are time constrained and under-resourced. 
-                            Agendas shift, budgets move and priorities change. 
-                            We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs. 
-                        </h2>
                     </div>
                 </div>
             </div> 
-            <div class="lines">
+            <div class="lines d-none d-lg-block">
                 <div class="line">
                     <p class="line__number">01</p>
                     <div class="line__original"></div>
@@ -186,8 +231,8 @@
     <section class="footer">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-6">
-                    <div class="footer__title">
+                <div class="col-12 col-lg-6">
+                    <div class="footer__title section__title">
                         <h1>Contact</h1>
                     </div>
                     <div class="footer__span"></div>
@@ -196,14 +241,14 @@
                         <h2 class="email__text"> info@marvelpowergroup.com</h2>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="footer__form">
+                <div class="col-12 offset-lg-1 col-lg-5">
+                    <div class="footer__form row">
                         <form>
-                            <h2 class="form__title"> 
+                            <h2 class="form__title col-12"> 
                                 Stay in the loop by getting on our mailing list
                             </h2>
-                            <input type="text" class="form__name form__input" name="name" placeholder="NAME *"><br>
-                            <input type="email" class="form__email form__input" name="email" placeholder="E-MAIL *">
+                            <input type="text" class="form__name form__input col-12" name="name" placeholder="NAME *"><br>
+                            <input type="email" class="form__email form__input col-12" name="email" placeholder="E-MAIL *">
                             <div class="form__button text-right">
                                 <button type="button">
                                     CONTACT US
@@ -211,12 +256,11 @@
                                 </button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
-        <div class="lines">
+        <div class="lines d-none d-lg-block ">
             <div class="line">
                 <p class="line__number">01</p>
                 <div class="line__original"></div>

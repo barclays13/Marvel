@@ -1,0 +1,76 @@
+@import './palette.less';
+
+@media (max-width: 768px){
+    .header {
+        &__title>h1 {
+            margin-top: 70px;
+            font-size: 50px;
+        }
+
+
+
+        &__button > button {
+            margin-top: 40px;
+            margin-bottom: 70px;
+        }
+
+        &__discription > h2 {
+            line-height: 20px;
+            font-size: 14px;
+            margin-top: 18px;
+        }
+
+        &__nav_mobile-rolled {
+            .header__logo-inv {
+                background-color: @white;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        margin: 30px 30px;
+        width: 25;
+        height: 25px;
+
+        &__line {
+            width: 25px;
+            height: 2px;
+            margin-top: 5px;
+            background-color: @black;
+        }
+    }
+
+    .main {
+        .about-as__content {
+            display: flex;
+            padding: 55px 0 50px 0;
+        }
+        &__title {
+            &_about-as {
+                padding: 30px 0 10px 0;
+            }
+    
+            &_services {
+                padding: 30px 0 10px 0;
+            }
+        }
+    }
+
+    .section__title > h1 {
+        font-family: "Alata";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 100px;
+    }
+
+    .footer {
+        height: 800px;
+
+        &__form {
+            margin-top: 40px;
+            justify-content: flex-start;
+        }
+    }
+}
+
+

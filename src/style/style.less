@@ -64,10 +64,19 @@
     }
 }
 
+.section__title > h1 {
+    font-family: "Alata";
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 100px;
+
+}
+
 .header {    
     position: relative;
     background-image: linear-gradient(to top, @black 0%, rgba(255, 255, 255, 00) 100%), url(../assets/images/robert-bye-min.png);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
 
@@ -76,7 +85,7 @@
     }
 
     &__logo {
-        margin: 22px 0px;
+        padding: 20px;
         width: 146px;
         height: 55px; 
     }
@@ -84,6 +93,7 @@
     &__links {
         display: flex;
         align-items: center;
+        padding: 30px 0 0 0;
     }
 
     &__link {
@@ -149,9 +159,9 @@
         text-align: center;
         margin-top: 240px;
         padding-bottom: 55px;
-
+        width: 100%;
+        
         a {
-            text-align: center;
             text-decoration: none;
             font-family: "Sofia Pro";
             font-weight: 300;
@@ -187,19 +197,7 @@
         align-items: center;
     }
 
-    &__title > h1 {
-        font-family: "Alata";
-        font-size: 90px;
-        font-weight: 400;
-        padding: 0;
-    }
-
     &__title {
-        font-family: "Alata";
-        font-size: 90px;
-        font-weight: 400;
-        padding: 0;
-
         &_about-as {
             padding: 93px 0 50px 0;
         }
@@ -217,7 +215,7 @@
             background-color: @orange;
         }
 
-        &_service {
+        &_services {
             background-color: @white;
         }
     }   
@@ -232,7 +230,6 @@
         }
 
         .about-as__description {
-            margin-left: 68px;
 
             p {
                 font-family: "Sofia Pro";
@@ -285,7 +282,7 @@
 
             .item__arrow {
                 width: 40px;
-                margin: 45px 0 0 20px;
+                margin: 30px 0 20px 20px;
             }
         }
 
@@ -300,18 +297,13 @@
 }
 
 .footer {
-    height: 782px;
+    height: 600px;
     background-color: @black;
     position: relative;
     display: flex;
     align-items: center;
-    
+
     &__title > h1 {
-        font-family: "  Alata";
-        font-size: 90px;
-        line-height: 100px;
-        font-weight: 400;
-        padding: 0;
         padding: 100px 0 50px 0;
         color: @white;
     }
@@ -346,7 +338,7 @@
 
     &__form {
         display: flex;
-        margin-top: 150px;
+        margin-top: 100px;
         justify-content: flex-end;
 
         .form__title {
@@ -356,7 +348,7 @@
             line-height: 42px;
             color: @white;
             margin-bottom: 40px;
-            width: 300px;
+            width: 327px;
         }
 
         .form__input {
