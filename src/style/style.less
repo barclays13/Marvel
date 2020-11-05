@@ -16,61 +16,60 @@
         url("../assets/fonts/Alata-Regular.eot") format("eot");
 }
 
+.lines {
+    position: absolute;
+    right: 0%;
+    
+    .active {
+        margin-left: -50px;
+    }
+    
+    .line {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px;
+
+        &__number {
+            font-family: "Sofia Pro";
+            font-weight: 400;
+            font-size: 10px;
+            margin-top: 14px;
+            color: @white;
+        }
+
+        &__name {
+            font-family: "Sofia Pro";
+            font-weight: 300;
+            font-size: 14px;
+            color: @white;
+            margin-top: 12px;
+            padding-left: 5px;
+        }
+
+        &__original {
+            position: absolute;
+            right: 0;
+            width: 20px;
+            height: 1px;
+            background-color: @white;
+        }
+
+        &__active {
+            width: 60px;
+            height: 1px;
+            margin-left: 5px;
+            background-color:   @white;
+        }
+    }
+}
+
 .header {    
     position: relative;
     background-image: linear-gradient(to top, @black 0%, rgba(255, 255, 255, 00) 100%), url(../assets/images/robert-bye-min.png);
     background-size: 100%;
     display: flex;
     align-items: center;
-
-    &__lines {
-        position: absolute;
-        right: 0%;
-        height: 100px;
-        width: 50px;
-        
-        .active {
-            margin-left: -50px;
-        }
-        
-        .line {
-            
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-
-            &__number {
-                font-family: "Sofia Pro";
-                font-weight: 400;
-                font-size: 10px;
-                margin-top: 14px;
-                color: @white;
-            }
-
-            &__name {
-                font-family: "Sofia Pro";
-                font-weight: 300;
-                font-size: 14px;
-                color: @white;
-                margin-top: 12px;
-                margin-left: 5px;
-            }
-
-            &__original {
-                width: 20px;
-                height: 1px;
-                margin-left: 18px;
-                background-color:@white;
-            }
-
-            &__active {
-                width: 60px;
-                height: 1px;
-                margin-left: 5px;
-                background-color:@white;
-            }
-        }
-    }
 
     &__navbar {
         height: 100px;
@@ -166,4 +165,136 @@
     
     
 
+
 }
+
+.main {
+    .lines > .line {
+        div {
+            background-color: @black; 
+        }
+
+        p {
+            color: @black; 
+        }
+    }
+
+    &__about-as {
+        position: relative;
+        background-color: @white;
+        display: flex;
+        align-items: center;
+    }
+
+    &__services {
+        position: relative;
+        background-color: @yellow;   
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: "Alata";
+        font-size: 90px;
+        font-weight: 400;
+        padding: 0;
+
+        &_about-as {
+            padding: 93px 0 50px 0;
+        }
+
+        &_services {
+            padding: 101px 0 62px 0;
+        }
+    }
+
+    &__span {
+        height: 6px;
+        width: 100px;
+
+        &_about-as {
+            background-color: @orange;
+        }
+
+        &_service {
+            background-color: @white;
+        }
+    }   
+
+    .about-as__content {
+        display: flex;
+        padding: 55px 0 140px 0;
+
+        .about-as__image {
+            width: 486px;
+            height: 315px;
+        }
+
+        .about-as__description {
+            margin-left: 68px;
+
+            p {
+                font-family: "Sofia Pro";
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .services__content {
+        padding: 45px 0 92px;
+
+        .services__descriprion {
+            font-family: "Sofia Pro";
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 26px;
+        }
+
+        .services__items {
+            margin-top: 47px;
+
+            .item__title {
+                font-family: "Sofia Pro";
+                font-size: 40px;
+                font-weight: 700;
+                word-wrap: break-word;
+
+                p {
+                    padding: 0;
+                    margin: -20px 0 0 0;
+                }
+            }
+
+            .services__list {
+                padding-left: 20px;
+                list-style-image: url(/src/assets/images/marker.png);
+                color: @white;
+                margin-bottom: 0;
+
+                li {
+                    padding-left: 10px;
+                    color: @black;
+                    font-family: "Sofia Pro";
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 20px;
+                }
+            }
+
+            .item__arrow {
+                width: 40px;
+                margin: 45px 0 0 20px;
+            }
+        }
+
+        .services__text > h2 {
+            margin-top: 65px;
+            font-family: "Sofia Pro";
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 26px;
+        }
+    }
+}
+
