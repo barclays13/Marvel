@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Alata";
-        src: url("../assets/fonts/Alata-Regular.woff2") format("woff2"),
+    src: url("../assets/fonts/Alata-Regular.woff2") format("woff2"),
         url("../assets/fonts/Alata-Regular.woff") format("woff"),
         url("../assets/fonts/Alata-Regular.ttf") format("ееа"),
         url("../assets/fonts/Alata-Regular.eot") format("eot");
@@ -19,11 +19,11 @@
 .lines {
     position: absolute;
     right: 0%;
-    
+
     .active {
         margin-left: -50px;
     }
-    
+
     .line {
         display: flex;
         align-items: center;
@@ -59,20 +59,41 @@
             width: 60px;
             height: 1px;
             margin-left: 5px;
-            background-color:   @white;
+            background-color: @white;
         }
     }
 }
 
-.section__title > h1 {
-    font-family: "Alata";
-    font-size: 90px;
-    font-weight: 400;
-    line-height: 100px;
+.button {
+    button {
+        width: 196px;
+        height: 48px;
+        background-color: @orange;
+        font-family: "Sofia Pro";
+        font-weight: 600;
+        font-size: 14px;
+        border: 0;
 
+        img {
+            margin-left: 5px;
+        }
+    }
+
+    button:active {
+        border: 5px solid @yellow;
+    }
 }
 
-.header {    
+.section__title {
+    h1 {
+        font-family: "Alata";
+        font-size: 90px;
+        font-weight: 400;
+        line-height: 100px;
+    }
+}
+
+.header {
     position: relative;
     background-image: linear-gradient(to top, @black 0%, rgba(255, 255, 255, 00) 100%), url(../assets/images/robert-bye-min.png);
     background-repeat: no-repeat;
@@ -87,7 +108,7 @@
     &__logo {
         padding: 20px;
         width: 146px;
-        height: 55px; 
+        height: 55px;
     }
 
     &__links {
@@ -116,9 +137,9 @@
         color: @black;
         text-decoration: none;
 
-    }   
+    }
 
-    &__title > h1 {
+    &__title>h1 {
         font-family: 'Alata';
         font-size: 115px;
         font-weight: 400;
@@ -127,7 +148,7 @@
         margin-top: 322px;
     }
 
-    &__discription > h2 {
+    &__discription>h2 {
         font-family: "Sofia Pro";
         font-weight: 300;
         font-size: 25px;
@@ -136,23 +157,8 @@
         text-align: center;
     }
 
-    &__button > button {
-        width: 196px;
-        height: 48px;
+    &__button>button {
         margin-top: 79px;
-        background-color: @orange;
-        font-family: "Sofia Pro";
-        font-weight: 600;
-        font-size: 14px;    
-        border: 0;
-
-        img {
-            margin-left: 5px;
-        }
-    }
-
-    &__button > button:active {
-        border: 5px solid @yellow;
     }
 
     &__scroll {
@@ -160,12 +166,12 @@
         margin-top: 240px;
         padding-bottom: 55px;
         width: 100%;
-        
+
         a {
             text-decoration: none;
             font-family: "Sofia Pro";
             font-weight: 300;
-            font-size: 14px; 
+            font-size: 14px;
             color: @white;
             line-height: 14px;
         }
@@ -173,17 +179,17 @@
 }
 
 .main {
-    .lines > .line {
+    .lines>.line {
         div {
-            background-color: @black; 
+            background-color: @black;
         }
 
         p {
-            color: @black; 
+            color: @black;
         }
     }
 
-    &__about-as {
+    &__about-us {
         position: relative;
         background-color: @white;
         display: flex;
@@ -192,18 +198,18 @@
 
     &__services {
         position: relative;
-        background-color: @yellow;   
+        background-color: @yellow;
         display: flex;
         align-items: center;
     }
 
     &__title {
-        &_about-as {
-            padding: 93px 0 50px 0;
+        &_about-us {
+            padding: 90px 0 50px 0;
         }
 
         &_services {
-            padding: 101px 0 62px 0;
+            padding: 100px 0 60px 0;
         }
     }
 
@@ -211,25 +217,25 @@
         height: 6px;
         width: 100px;
 
-        &_about-as {
+        &_about-us {
             background-color: @orange;
         }
 
         &_services {
             background-color: @white;
         }
-    }   
+    }
 
-    .about-as__content {
+    .about-us__content {
         display: flex;
         padding: 55px 0 140px 0;
 
-        .about-as__image {
+        .about-us__image {
             width: 486px;
             height: 315px;
         }
 
-        .about-as__description {
+        .about-us__description {
 
             p {
                 font-family: "Sofia Pro";
@@ -286,7 +292,7 @@
             }
         }
 
-        .services__text > h2 {
+        .services__text>h2 {
             margin-top: 65px;
             font-family: "Sofia Pro";
             font-size: 18px;
@@ -297,13 +303,13 @@
 }
 
 .footer {
-    height: 600px;
-    background-color: @black;
     position: relative;
     display: flex;
+    height: 600px;
+    background-color: @black;
     align-items: center;
 
-    &__title > h1 {
+    &__title>h1 {
         padding: 100px 0 50px 0;
         color: @white;
     }
@@ -316,7 +322,7 @@
 
     &__email {
         margin-top: 40px;
-        
+
         .h2 {
             font-family: "Sofia Pro";
             font-size: 40px;
@@ -329,17 +335,16 @@
             color: @white;
         }
 
-        .email__text {
+        .email__name {
             color: @orange;
             text-decoration: underline;
         }
-
     }
 
     &__form {
         display: flex;
-        margin-top: 100px;
         justify-content: flex-end;
+        margin-top: 100px;
 
         .form__title {
             font-family: "Sofia Pro";
@@ -363,23 +368,8 @@
             margin-top: 5px;
         }
 
-        .form__button > button {
+        .form__button>button {
             margin-top: 5px;
-            width: 196px;
-            height: 48px;
-            background-color: @orange;
-            font-family: "Sofia Pro";
-            font-weight: 600;
-            font-size: 14px;    
-            border: 0;
-    
-            img {
-                margin-left: 5px;
-            }
-        }
-    
-        .form__button > button:active {
-            border: 5px solid @yellow;
         }
     }
-}   
+}
