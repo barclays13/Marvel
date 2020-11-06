@@ -2,7 +2,7 @@
 
 @media (max-width: 768px) {
 
-    .section__title>h1 {
+    .section__title > h1 {
         font-family: "Alata";
         font-size: 40px;
         font-weight: 400;
@@ -10,17 +10,19 @@
     }
 
     .header {
-        &__title>h1 {
+      box-sizing: border-box;
+      
+        &__title > h1 {
             margin-top: 70px;
             font-size: 50px;
         }
 
-        &__button>button {
+        &__button > button {
             margin-top: 40px;
             margin-bottom: 70px;
         }
 
-        &__discription>h2 {
+        &__description > h2 {
             line-height: 20px;
             font-size: 14px;
             margin-top: 18px;
@@ -30,6 +32,36 @@
             .header__logo-inv {
                 background-color: @white;
             }
+        }
+
+        .burger{
+          margin-top: 30px;
+          height: 50px;
+          width: 50px;
+          cursor: pointer;
+
+          &__line {
+            margin-top: 5px;
+            height: 2px;
+            width: 25px;
+            background-color: @black;
+          }
+        }
+        
+        &__links {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: @white;
+          margin-top: 30px;
+        }
+
+        &__link {
+          font-family: "Sofia Pro";
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 40px;
+          margin-top: 30px;
         }
     }
 
@@ -47,13 +79,21 @@
     }
 
     .main {
-        .about-as__content {
+        &__services {
+          padding: 0 10px;
+        }
+
+        &__about-us{
+          padding: 0 10px;
+        }
+
+        .about-us__content {
             display: flex;
-            padding: 55px 0 50px 0;
+            padding: 50px 10px;
         }
 
         &__title {
-            &_about-as {
+            &_about-us {
                 padding: 30px 0 10px 0;
             }
 
@@ -62,7 +102,6 @@
             }
         }
     }
-
     .footer {
         height: 800px;
 

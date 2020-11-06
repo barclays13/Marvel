@@ -11,28 +11,35 @@
         <div class="container">
             <div class="row">
                 <div class="header__navbar col-12">
-                    <div class="header__nav d-flex justify-content-between ">
-                        <div class="header__logo">
-                            <img  src="./src/assets/images/logo.png">
+                    <div class="header__nav row">
+                        <div class="header__logo col-lg-3 col-md-3 col-10">
+                            <img class="logo__original d-block" src="./src/assets/images/logo.svg">
+                            <img class="logo__inversion d-none" src="./src/assets/images/logo-inversion.png">
                         </div>
-                        <div class="header__links d-none d-md-block">
-                            <a class="header__about header__link" href="#about">About</a>
-                            <a class="header__services header__link header__link_active" href="#services">Services</a>
-                            <a class="header__contact header__link" href="#contact">Contact</a>
+                        <div class="burger d-sm-none d-md-block col-xs-2">
+                          <div class="burger__lines">
+                            <div class="burger__line"></div>
+                            <div class="burger__line"></div>
+                          </div>
+                        </div>
+                        <div class="header__links offset-lg-4 col-lg-5 offset-md-2 col-md-7 col-sm-12">
+                          <a class="header__about header__link" href="#about">About</a>
+                          <a class="header__services header__link" href="#services">Services</a>
+                          <a class="header__contact header__link" href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
                 <div class="header__title col-12">
                     <h1>Marvel Power Group</h1>
                 </div>
-                <div class="header__discription col-12">
+                <div class="header__description col-12">
                     <h2>
                         Marvel Power Group is a boutique consulting firm with a fresh, markets-based approach to value creation. We offer services to clients in energy, water, manufacturing and transportation sectors
                     </h2>
                 </div>
                 <div class="header__button button text-center col-12">
                     <button type="button">
-                        CONTACT US
+                        <a href="#contact">CONTACT US</a>
                         <img src="./src/assets/images/header-button.png" alt="electrical plug">
                     </button>
                 </div>
@@ -72,10 +79,16 @@
                     <div class="about-us__content row">
                         <img class="about-us__image col-lg-6 col-12" src="./src/assets/images/about_us_content.png" alt="city">
                         <div class="about-us__description col-lg-6 col-12">
-                            <P>Our dynamic, solutions-oriented team brings decades 
-                                of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. </P>
-                            <P>We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. </P>
-                            <P>  We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.</P>
+                            <p>
+                              Our dynamic, solutions-oriented team brings decades 
+                                of relevant transactional, analytical and regulatory experience to supporting our clients’ unique agendas. 
+                            </p>
+                            <p>
+                              We are experienced practitioners who have run companies, successfully originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation and climate leadership. 
+                            </p>
+                            <p>  
+                              We specialize in structuring balanced solutions for all affected stakeholders and uncovering economic opportunities in otherwise opaque environments.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +121,7 @@
                     </div>
                     <div class="main__span main__span_services"></div>
                     <div class="services__content row">
-                        <div class="services__descriprion col-9">
+                        <div class="services__description col-9">
                             <p>
                                 Our clients are at the forefront of energy transition and innovation. 
                                 Their task is complex: balance reliability and cost effectiveness with new 
@@ -194,7 +207,7 @@
             </div>
         </div>
     </section>
-    <section id="contact"class="footer">
+    <section id="contact" class="footer">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-12 col-lg-6">
