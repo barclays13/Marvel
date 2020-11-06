@@ -287,7 +287,7 @@
                     font-family: "Sofia Pro";
                     font-size: 18px;
                     font-weight: 300;
-                    line-height: 20px;
+                    line-height: 24px;
                 }
             }
 
@@ -310,7 +310,6 @@
 .footer {
     position: relative;
     display: flex;
-    height: 500px;
     background-color: @black;
     align-items: center;
 
@@ -349,7 +348,7 @@
     &__form {
         display: flex;
         justify-content: flex-end;
-        margin-top: 100px;
+        margin-top: 150px;
         margin-left: 15px;
 
         .form__title {
@@ -372,10 +371,17 @@
             color: @black;
             letter-spacing: 0.6px;
             margin-top: 5px;
+            
         }
 
-        .form__button>button {
+        .form__button {
+          margin-bottom: 50px;
+
+          button {
             margin-top: 5px;
-        }
+
+          }
+        } 
+
     }
 }
