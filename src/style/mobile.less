@@ -18,7 +18,7 @@
         }
 
         &__button > button {
-            margin-top: 40px;
+            margin-top: 80px;
             margin-bottom: 70px;
         }
 
@@ -28,16 +28,11 @@
             margin-top: 18px;
         }
 
-        &__nav_mobile-rolled {
-            .header__logo-inv {
-                background-color: @white;
-            }
-        }
-
         .burger{
           margin-top: 30px;
-          height: 50px;
-          width: 50px;
+          margin-left: 20px;
+          height: 30px;
+          width: 30px;
           cursor: pointer;
 
           &__line {
@@ -48,20 +43,66 @@
           }
         }
         
+        .header__mobile {
+          width: 100%;
+
+          .header__navbar {
+            padding-left: 10px;
+            height: 80px;
+            background-color: @black;
+
+            .logo__inversion {
+              width: 100px;
+              height: 40px;
+            }
+
+            .close {
+              padding: 0;
+              cursor: pointer;
+              height: 75px;
+              width: 75px;
+
+              img {
+                margin-top: 35px;
+              }
+            }
+          }
+
+          .header__button {
+            background-color: @white;
+          }
+        }
+
         &__links {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
+          display: none;
+        }
+
+        .links {
+          height: 200px;
           background-color: @white;
-          margin-top: 30px;
         }
 
         &__link {
+          text-align: center;
+          display: block;
           font-family: "Sofia Pro";
           font-weight: 400;
           font-size: 40px;
           line-height: 40px;
-          margin-top: 30px;
+          padding-top: 30px;
+          margin-left: 0;
+        }
+
+        &__link:hover {
+          text-align: center;
+          display: block;
+          font-family: "Sofia Pro";
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 40px;
+          padding-top: 30px;
+          margin-left: 0;
+          opacity: 0.6;
         }
     }
 
@@ -102,6 +143,7 @@
             }
         }
     }
+
     .footer {
         height: 800px;
 

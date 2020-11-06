@@ -8,21 +8,20 @@
 </head>
 <body>
     <section class="header">
-        <div class="container">
+        <div class="container header__desktop">
             <div class="row">
                 <div class="header__navbar col-12">
                     <div class="header__nav row">
-                        <div class="header__logo col-lg-3 col-md-3 col-10">
-                            <img class="logo__original d-block" src="./src/assets/images/logo.svg">
-                            <img class="logo__inversion d-none" src="./src/assets/images/logo-inversion.png">
+                        <div class="header__logo col-lg-3 col-md-3 col-10 col-xs-11">
+                            <img class="logo__original" src="./src/assets/images/logo.svg">
                         </div>
-                        <div class="burger d-sm-none d-md-block col-xs-2">
+                        <div class="burger d-md-none d-md-block col-xs-1">
                           <div class="burger__lines">
                             <div class="burger__line"></div>
                             <div class="burger__line"></div>
                           </div>
                         </div>
-                        <div class="header__links offset-lg-4 col-lg-5 offset-md-2 col-md-7 col-sm-12">
+                        <div class="header__links offset-lg-4 col-lg-5 offset-md-2 col-md-7">
                           <a class="header__about header__link" href="#about">About</a>
                           <a class="header__services header__link" href="#services">Services</a>
                           <a class="header__contact header__link" href="#contact">Contact</a>
@@ -48,6 +47,30 @@
                 </div> 
             </div>    
         </div>
+        <div class="header__mobile d-none">
+              <div class="header__navbar ">
+                  <div class="header__nav row">
+                      <div class="header__logo col-lg-3 col-md-3 col-11">
+                        <img class="logo__inversion" src="./src/assets/images/logo-inversion.png">
+                      </div>
+                      <div class="close d-md-none d-md-block col-1">
+                        <img src="./src/assets/images/close.svg" alt="close-icon">
+                      </div>
+                  </div>
+
+              </div>
+              <div class="links">
+                <a class="header__link col-12" href="#about">About</a>
+                <a class="header__link col-12" href="#services">Services</a>
+                <a class="header__link col-12" href="#contact"> Contact</a>
+              </div>
+              <div class="header__button button text-center ">
+                  <button type="button">
+                      <a href="#contact">CONTACT US</a>
+                      <img src="./src/assets/images/header-button.png" alt="electrical plug">
+                  </button>
+              </div>
+         </div>
         <div class="lines header__lines d-none d-lg-block">
             <div class="line active ">
                 <p class="line__number">01</p>
