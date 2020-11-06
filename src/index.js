@@ -6,9 +6,7 @@ const headerListLink = document.querySelectorAll('.header__link'),
       burgerBtn = document.querySelector('.burger'),
       closeBtn = document.querySelector('.close'),
       headerDesktop = document.querySelector('.header__desktop'),
-      headerMobile = document.querySelector('.header__mobile'),
-      email = document.querySelector('.form__email'),
-      name = document.querySelector('.form__name');
+      headerMobile = document.querySelector('.header__mobile');
 
 headerLinks.addEventListener('click', event => {
   const target = event.target;
