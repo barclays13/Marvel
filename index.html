@@ -7,13 +7,15 @@
     <title>Marvel</title>
 </head>
 <body>
-    <section class="header">
+    <section id="home" class="header">
         <div class="container header__desktop">
             <div class="header__row row">
                 <div class="header__navbar col-12">
                     <div class="header__nav col-12">
                         <div class="header__logo col-lg-3 col-md-3 col-10 col-xs-11">
-                            <img class="logo__original" src="./src/assets/images/logo.svg">
+                            <a href="#home">
+                                <img class="logo__original" src="./src/assets/images/logo.svg">
+                            </a>
                         </div>
                         <div class="burger d-md-none d-md-block col-xs-1">
                             <div class="burger__lines">
@@ -77,25 +79,6 @@
                   </button>
               </div>
          </div>
-        <div class="lines header__lines d-none d-lg-block">
-            <div class="line active ">
-                <p class="line__number">01</p>
-                <p class="line__name">Home</p>
-                <div class="line__active"></div>
-            </div>
-            <div class="line">
-                <p class="line__number">02</p>
-                <div class="line__original"></div>
-            </div>
-            <div class="line">
-                <p class="line__number">03</p>
-                <div class="line__original"></div>
-            </div>
-            <div class="line">
-                <p class="line__number">04</p>
-                <div class="line__original"></div>
-            </div>
-        </div>
     </section>
     <section class="main">
         <div id="about" class="main__about-us">
@@ -120,25 +103,6 @@
                             </p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="lines d-none d-lg-block">
-                <div class="line">
-                    <p class="line__number">01</p>
-                    <div class="line__original"></div>
-                </div>
-                <div class="line active">
-                    <p class="line__number">02</p>
-                    <p class="line__name"> About Us</p>
-                    <div class="line__active"></div>
-                </div>
-                <div class="line">
-                    <p class="line__number">03</p>
-                    <div class="line__original"></div>
-                </div>
-                <div class="line">
-                    <p class="line__number">04</p>
-                    <div class="line__original"></div>
                 </div>
             </div>
         </div>
@@ -223,25 +187,6 @@
                     </div>
                 </div>
             </div> 
-            <div class="lines d-none d-lg-block">
-                <div class="line">
-                    <p class="line__number">01</p>
-                    <div class="line__original"></div>
-                </div>
-                <div class="line ">
-                    <p class="line__number">02</p>
-                    <div class="line__original"></div>
-                </div>
-                <div class="line active">
-                    <p class="line__number">03</p>
-                    <p class="line__name"> Services</p>
-                    <div class="line__active"></div>
-                </div>
-                <div class="line">
-                    <p class="line__number">04</p>
-                    <div class="line__original"></div>
-                </div>
-            </div>
         </div>
     </section>
     <section id="contact" class="footer">
@@ -285,26 +230,29 @@
                 </div>
             </div>
         </div>
-        <div class="lines d-none d-lg-block ">
-            <div class="line">
-                <p class="line__number">01</p>
-                <div class="line__original"></div>
-            </div>
-            <div class="line ">
-                <p class="line__number">02</p>
-                <div class="line__original"></div>
-            </div>
-            <div class="line">
-                <p class="line__number">03</p>
-                <div class="line__original"></div>
-            </div>
-            <div class="line active">
-                <p class="line__number">04</p>
-                <p class="line__name"> Contact</p>
-                <div class="line__active"></div>
-            </div>
-        </div>
     </section>
+    <div class="navbar_lines lines d-none d-lg-block">
+        <a class="navbar__line line active white" href="#home">
+            <p class="line__number">01</p>
+            <p class="line__name">Home</p>  
+            <div class="line__block"></div>
+        </a>
+        <a class="navbar__line line white " href="#about" >
+            <p class="line__number">02</p>
+            <p class="line__name">About Us</p>
+            <div class="line__block"></div>
+        </a>
+        <a class="navbar__line line white" href="#services" >
+            <p class="line__number">03</p>
+            <p class="line__name">Services</p>
+            <div class="line__block"></div>
+        </a>
+        <a class="navbar__line line white" href="#contact" >
+            <p class="line__number">04</p>
+            <p class="line__name">Contact</p>
+            <div class="line__block"></div>
+        </a>
+    </div>
     <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
 </html>

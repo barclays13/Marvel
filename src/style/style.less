@@ -17,49 +17,99 @@
 }
 
 .lines {
-    position: absolute;
+    position: fixed;
     right: 0%;
-
-    .active {
-        margin-left: -50px;
-    }
+    top: 40%;
 
     .line {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin-bottom: 10px;
-
-        &__number {
+        justify-content: flex-end;
+        text-decoration: none;
+        
+        .line__number {
             font-family: "Sofia Pro";
             font-weight: 400;
             font-size: 10px;
             margin-top: 14px;
-            color: @white;
+            margin-right: 30px;
+            color: @white;     
         }
 
-        &__name {
-            font-family: "Sofia Pro";
-            font-weight: 300;
-            font-size: 14px;
-            color: @white;
-            margin-top: 12px;
-            padding-left: 5px;
+        .line__name {
+            display: none;
+            color: @white;     
         }
 
-        &__original {
+        .line__block {
             position: absolute;
             right: 0;
             width: 20px;
             height: 1px;
-            background-color: @white;
+            background-color: @white;  
+        }
+    }
+
+    .line:hover {
+        opacity: 0.6;
+    }
+
+    .active {
+        display: flex!important;
+
+        .line__number {
+            font-family: "Sofia Pro";
+            font-weight: 400;
+            font-size: 10px;
+            margin-top: 14px;
+            margin-right: 0px; 
+            color: @white;      
         }
 
-        &__active {
+        .line__name {
+            display: block;
+            font-family: "Sofia Pro";
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 12px;
+            padding-left: 5px;
+            padding-right: 70px;
+            color: @white;   
+        }
+
+        .line__block {
             width: 60px;
             height: 1px;
             margin-left: 5px;
-            background-color: @white;
+            background-color: @white;  
+        }
+    }
+
+    .black {
+        .line__number {
+            color: @black;     
+        }
+    
+        .line__name {
+            color: @black;  
+        }
+    
+        .line__block {
+            background-color: @black;  
+        }
+    }
+    
+    .white {
+        .line__number {
+            color: @white;     
+        }
+    
+        .line__name {
+            color: @white;   
+        }
+    
+        .line__block {
+            background-color: @white;   
         }
     }
 }
@@ -220,16 +270,6 @@
 }
 
 .main {
-    .lines>.line {
-        div {
-            background-color: @black;
-        }
-
-        p {
-            color: @black;
-        }
-    }
-
     &__about-us {
         position: relative;
         background-color: @white;
