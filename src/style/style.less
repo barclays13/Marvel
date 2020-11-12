@@ -93,6 +93,25 @@
     }
 }
 
+.block__lines {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .block__line {
+        width: 1px;
+        height: 15px;
+        background-color: @white;
+    }
+
+    .block__line-active {
+        width: 1px;
+        height: 101px;
+        background-color: @yellow;
+    }
+}
+
 .header {
     position: relative;
     background-image: linear-gradient(to top, @black 0%, rgba(255, 255, 255, 00) 100%), url(../assets/images/robert-bye-min.png);
@@ -101,8 +120,18 @@
     display: flex;
     align-items: center;
 
+    &__row {
+        flex-direction: column;
+    }
+
     &__navbar {
+        display: flex!important;
         height: 100px;
+        
+        .header__nav {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__logo {
@@ -114,16 +143,17 @@
     &__links {
         display: flex;
         align-items: center;
-        padding: 30px 0 0 0;
+        justify-content: center;
     }
 
     &__link {
         font-family: "Sofia Pro";
         font-weight: 400;
         font-size: 18px;
+        line-height: 18px;
         color: @black;
-        margin-left: 66px;
         text-decoration: none;
+        margin-left: 66px;
 
         &_active {
             border-bottom: 1px solid @yellow;
@@ -141,10 +171,11 @@
 
     &__title>h1 {
         font-family: 'Alata';
-        font-size: 115px;
         font-weight: 400;
-        text-align: center;
+        font-size: 115px;
+        line-height: 130px;
         color: @white;
+        text-align: center;
         margin-top: 322px;
     }
 
@@ -152,6 +183,7 @@
         font-family: "Sofia Pro";
         font-weight: 300;
         font-size: 25px;
+        line-height: 35px;
         margin-top: 41px;
         color: @white;
         text-align: center;
@@ -166,9 +198,13 @@
         }
     }
 
+    &__block {
+        margin-top: 120px;
+    }
+
     &__scroll {
         text-align: center;
-        margin-top: 240px;
+        margin-top: 29px;
         padding-bottom: 55px;
         width: 100%;
 
@@ -206,6 +242,7 @@
         background-color: @yellow;
         display: flex;
         align-items: center;
+        margin-top: -7px;
     }
 
     &__title {
@@ -245,6 +282,7 @@
             p {
                 font-family: "Sofia Pro";
                 font-size: 18px;
+                line-height: 26px;
                 font-weight: 300;
             }
         }
@@ -268,7 +306,8 @@
                 font-size: 40px;
                 font-weight: 700;
                 word-wrap: break-word;
-
+                width: 80%;
+                
                 p {
                     padding: 0;
                     margin: -20px 0 0 0;
@@ -282,18 +321,19 @@
                 margin-bottom: 0;
 
                 li {
-                    padding-left: 10px;
-                    color: @black;
+                    margin-top: 10px;
                     font-family: "Sofia Pro";
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 300;
                     line-height: 24px;
+                    padding-left: 10px;
+                    color: @black;
                 }
             }
 
             .item__arrow {
                 width: 40px;
-                margin: 30px 0 20px 20px;
+                margin: 30px 0 20px 30px;
             }
         }
 
@@ -305,6 +345,15 @@
             line-height: 26px;
         }
     }
+
+    &__block {
+        z-index: 1;
+        position: relative;
+
+        .block__line {
+            background-color: @black
+        }
+    }
 }
 
 .footer {
@@ -314,7 +363,7 @@
     align-items: center;
 
     &__title>h1 {
-        padding: 100px 0 50px 0;
+        padding: 100px 0 40px 0;
         color: @white;
     }
 
@@ -327,7 +376,7 @@
     &__email {
         margin-top: 40px;
 
-        .h2 {
+        h2 {
             font-family: "Sofia Pro";
             font-size: 40px;
             font-weight: 700;
@@ -336,11 +385,12 @@
         }
 
         .email__title {
-            color: @white;
+            color: @white;  
         }
 
         .email__name {
             color: @orange;
+            line-height: 42px;
             text-decoration: underline;
         }
     }
@@ -353,8 +403,8 @@
 
         .form__title {
             font-family: "Sofia Pro";
-            font-size: 40px;
             font-weight: 700;
+            font-size: 40px;
             line-height: 42px;
             color: @white;
             margin-bottom: 40px;
@@ -379,9 +429,12 @@
 
           button {
             margin-top: 5px;
-
           }
         } 
 
+    }
+
+    &__block {
+        margin: 100px 0;
     }
 }

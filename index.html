@@ -9,22 +9,22 @@
 <body>
     <section class="header">
         <div class="container header__desktop">
-            <div class="row">
+            <div class="header__row row">
                 <div class="header__navbar col-12">
-                    <div class="header__nav row">
+                    <div class="header__nav col-12">
                         <div class="header__logo col-lg-3 col-md-3 col-10 col-xs-11">
                             <img class="logo__original" src="./src/assets/images/logo.svg">
                         </div>
                         <div class="burger d-md-none d-md-block col-xs-1">
-                          <div class="burger__lines">
+                            <div class="burger__lines">
                             <div class="burger__line"></div>
                             <div class="burger__line"></div>
-                          </div>
+                            </div>
                         </div>
                         <div class="header__links offset-lg-4 col-lg-5 offset-md-2 col-md-7">
-                          <a class="header__about header__link" href="#about">About</a>
-                          <a class="header__services header__link" href="#services">Services</a>
-                          <a class="header__contact header__link" href="#contact">Contact</a>
+                            <a class="header__about header__link" href="#about">About</a>
+                            <a class="header__services header__link" href="#services">Services</a>
+                            <a class="header__contact header__link" href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -42,6 +42,15 @@
                         <img src="./src/assets/images/header-button.png" alt="electrical plug">
                     </button>
                 </div>
+                <div class="d-none d-md-block">
+                    <div class="header__block block__lines">
+                        <div class="block__line"></div>
+                        <div class="block__line"></div>
+                        <div class="block__line block__line-active"></div>
+                        <div class="block__line"></div>
+                        <div class="block__line"></div>
+                    </div>
+                </div>
                 <div class="header__scroll d-none d-md-block">
                     <a href="#">Scroll for more</a>
                 </div> 
@@ -49,15 +58,12 @@
         </div>
         <div class="header__mobile d-none">
               <div class="header__navbar ">
-                  <div class="header__nav row">
-                      <div class="header__logo col-lg-3 col-md-3 col-11">
-                        <img class="logo__inversion" src="./src/assets/images/logo-inversion.png">
-                      </div>
-                      <div class="close d-md-none d-md-block col-1">
-                        <img src="./src/assets/images/close.svg" alt="close-icon">
-                      </div>
+                <div class="header__logo header__logo-active col-lg-3 col-md-3 col-11">
+                    <img class="logo__inversion" src="./src/assets/images/logo-inversion.png">
                   </div>
-
+                  <div class="close d-md-none d-md-block col-1">
+                    <img src="./src/assets/images/close.svg" alt="close-icon">
+                  </div>
               </div>
               <div class="header_links">
                 <a class="header__link col-12" href="#about">About</a>
@@ -136,6 +142,17 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="col-12 d-none d-md-block">
+                <div class="main__block block__lines">
+                    <div class="block__line"></div>
+                    <div class="block__line"></div>
+                    <div class="block__line"></div>
+                    <div class="block__line"></div>
+                    <div class="block__line"></div>
+                </div>
+            </div>
+        </div>
         <div id="services" class="main__services">
             <div class="container">
                 <div class="row">
@@ -144,7 +161,7 @@
                     </div>
                     <div class="main__span main__span_services"></div>
                     <div class="services__content row">
-                        <div class="services__description col-9">
+                        <div class="services__description col-lg-9">
                             <p>
                                 Our clients are at the forefront of energy transition and innovation. 
                                 Their task is complex: balance reliability and cost effectiveness with new 
@@ -156,8 +173,7 @@
                             <div class="services__item col-lg-4 col-12">
                                 <div class="container">
                                     <div class="item__title">
-                                        <p>Enterprise</p>
-                                        <p>Strategy</p> 
+                                        <p>Enterprise Strategy</p>
                                     </div>
                                     <ul class="services__list">
                                         <li>Procurement and investment diligence</li>
@@ -171,8 +187,7 @@
                             <div class="services__item col-lg-4 col-12">
                                 <div class="container">
                                     <div class="item__title">
-                                        <p>Wholesale</p>
-                                        <p>Power</p> 
+                                        <p> Wholesale Power</p>
                                     </div>
                                     <ul class="services__list">
                                         <li>Commodity advisory and RFPs </li>
@@ -186,8 +201,7 @@
                             <div class="services__item col-lg-4 col-12">
                                 <div class="container">
                                     <div class="item__title">
-                                        <p>Market</p>
-                                        <p>Development</p>  
+                                        <p>Market Development</p>
                                     </div>
                                     <ul class="services__list">
                                         <li>New venture setup</li>
@@ -246,7 +260,7 @@
                 <div class="col-12 offset-lg-1 col-lg-5">
                     <div class="footer__form row">
                         <form>
-                            <h2 class="form__title col-12"> 
+                            <h2 class="form__title col-lg-9  col-12"> 
                                 Stay in the loop by getting on our mailing list
                             </h2>
                             <input type="text" class="form__name form__input col-12" name="name" placeholder="NAME *"><br>
@@ -258,6 +272,15 @@
                                 </button>
                             </div>
                         </form>
+                    </div>
+                </div>
+                <div class="col-12 d-none d-md-block">
+                    <div class="footer__block block__lines">
+                        <div class="block__line"></div>
+                        <div class="block__line"></div>
+                        <div class="block__line block__line-active"></div>
+                        <div class="block__line"></div>
+                        <div class="block__line"></div>
                     </div>
                 </div>
             </div>
