@@ -12,7 +12,9 @@ const headerListLink = document.querySelectorAll('.header__link'),
       services  = document.querySelector('#services'),
       footer = document.querySelector('.footer'),
       navBarLines = document.querySelector('.navbar_lines'),
-      listNavBarLines = document.querySelectorAll('.navbar__line');
+      listNavBarLines = document.querySelectorAll('.navbar__line'),
+      headerMobileBtn = headerMobile.querySelector('button'),
+      headerMobileLink = headerMobile.querySelector('.header__link');
 
 headerLinks.addEventListener('click', event => {
   const target = event.target;
@@ -25,23 +27,33 @@ headerLinks.addEventListener('click', event => {
   target.classList.toggle("header__link_active");
 });
 
-burgerBtn.addEventListener('click', () => {
+const toggleMobileMenu = () => {
   headerDesktop.classList.toggle('d-none');
   headerMobile.classList.toggle('d-none');
+}
+
+burgerBtn.addEventListener('click', () => {
+  toggleMobileMenu();
 });
 
 closeBtn.addEventListener('click', () => {
-  headerDesktop.classList.toggle('d-none');
-  headerMobile.classList.toggle('d-none');
+  toggleMobileMenu();
 });
 
 window.addEventListener('resize', () => {
   const screenWidth = document.documentElement.clientWidth;
   if (screenWidth > 768 && headerDesktop.classList.contains('d-none')) {
-    headerDesktop.classList.toggle('d-none');
-    headerMobile.classList.toggle('d-none');
+  toggleMobileMenu();
   }
 });
+
+headerMobileBtn.addEventListener('click', () => {
+  toggleMobileMenu();
+})
+
+headerMobileLink.addEventListener('click', () => {
+  toggleMobileMenu();
+})
 
 const setActive = activeElem => {
   listNavBarLines.forEach( elem => {
@@ -90,3 +102,4 @@ window.addEventListener('scroll', () => {
     setActive(listNavBarLines[3]);
   } 
 })
+
