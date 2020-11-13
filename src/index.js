@@ -14,10 +14,16 @@ const headerListLink = document.querySelectorAll('.header__link'),
       navBarLines = document.querySelector('.navbar_lines'),
       listNavBarLines = document.querySelectorAll('.navbar__line'),
       headerMobileBtn = headerMobile.querySelector('button'),
-      headerMobileLink = headerMobile.querySelector('.header__link');
+      headerLinksMobile = headerMobile.querySelector('.header_links');
+
+const toggleMobileMenu = () => {
+  headerDesktop.classList.toggle('d-none');
+  headerMobile.classList.toggle('d-none');
+}
 
 headerLinks.addEventListener('click', event => {
   const target = event.target;
+
   headerListLink.forEach( elem => {
     if (elem.classList.contains("header__link_active")) {
       elem.classList.remove("header__link_active");
@@ -26,11 +32,6 @@ headerLinks.addEventListener('click', event => {
 
   target.classList.toggle("header__link_active");
 });
-
-const toggleMobileMenu = () => {
-  headerDesktop.classList.toggle('d-none');
-  headerMobile.classList.toggle('d-none');
-}
 
 burgerBtn.addEventListener('click', () => {
   toggleMobileMenu();
@@ -43,7 +44,7 @@ closeBtn.addEventListener('click', () => {
 window.addEventListener('resize', () => {
   const screenWidth = document.documentElement.clientWidth;
   if (screenWidth > 768 && headerDesktop.classList.contains('d-none')) {
-  toggleMobileMenu();
+    toggleMobileMenu();
   }
 });
 
@@ -51,9 +52,13 @@ headerMobileBtn.addEventListener('click', () => {
   toggleMobileMenu();
 })
 
-headerMobileLink.addEventListener('click', () => {
-  toggleMobileMenu();
-})
+headerLinksMobile.addEventListener('click', event => {
+  const target = event.target;
+
+  if (target.classList.contains('header__link')) {
+    toggleMobileMenu();
+  }
+});
 
 const setActive = activeElem => {
   listNavBarLines.forEach( elem => {
