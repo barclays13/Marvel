@@ -1,10 +1,15 @@
 @import './palette.less';
 
 @media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
+
+    // html, body {
+    //     overflow-x: hidden;
+    // }
+
+    .hidden {
+      overflow: hidden!important;
     }
-    
+
     .section__title > h1 {
         font-family: "Alata";
         font-size: 40px;
@@ -14,7 +19,7 @@
 
     .header {
       box-sizing: border-box;
-      
+
         &__logo {
           padding-left: 0;
 
@@ -92,6 +97,10 @@
             margin-top: 80px;
             font-size: 50px;
           }
+        }
+
+        .header__mobile-active {
+          overflow: hidden;
         }
 
         &__links {

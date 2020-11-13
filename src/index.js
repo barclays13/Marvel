@@ -14,12 +14,15 @@ const headerListLink = document.querySelectorAll('.header__link'),
       navBarLines = document.querySelector('.navbar_lines'),
       listNavBarLines = document.querySelectorAll('.navbar__line'),
       headerMobileBtn = headerMobile.querySelector('button'),
-      headerLinksMobile = headerMobile.querySelector('.header_links');
+      headerLinksMobile = headerMobile.querySelector('.header_links'),
+      body = document.querySelector('body');
 
 const toggleMobileMenu = () => {
   headerDesktop.classList.toggle('d-none');
   headerMobile.classList.toggle('d-none');
+  body.classList.toggle('hidden');
 }
+
 
 headerLinks.addEventListener('click', event => {
   const target = event.target;
@@ -72,14 +75,14 @@ const setActive = activeElem => {
     listNavBarLines.forEach(elem=> {
       elem.classList.add('white');
       elem.classList.remove('black');
-    })
+    });
   } else if (activeElem.children[0].innerText === '02' || activeElem.children[0].innerText === '03'){
     listNavBarLines.forEach(elem=> {
       elem.classList.remove('white');
       elem.classList.add('black');
-    })
+    });
   }
-}
+};
 
 navBarLines.addEventListener('click', event => {
   const target = event.target;
@@ -106,5 +109,5 @@ window.addEventListener('scroll', () => {
   } else if (positionOfNavBar < getPositionFooterY) {
     setActive(listNavBarLines[3]);
   } 
-})
+});
 
